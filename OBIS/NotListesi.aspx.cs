@@ -15,5 +15,7 @@ namespace OBIS
             Repeater1.DataSource = dt.NotListesi();
             Repeater1.DataBind();
         }
+
+
     }
 }

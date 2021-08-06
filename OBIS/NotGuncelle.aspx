@@ -9,7 +9,7 @@
         <form runat="server" id="Form1">
             <div class="form-group">
                 <asp:Label for="TxtDersAd" runat="server" Text="Ders Ad" Style="font-weight: bold;"></asp:Label>
-                <asp:DropDownList ID="TxtDersAd" runat="server" CssClass="form-control"></asp:DropDownList>
+                <asp:TextBox ID="TxtDersAd" runat="server" CssClass="form-control" required ></asp:TextBox>
             </div>
             <div class="form-group">
                 <asp:Label for="TxtOgrId" runat="server" Text="Öğrenci Id" Style="font-weight: bold;"></asp:Label>
@@ -39,8 +39,8 @@
                 <asp:Label for="TxtDurum" runat="server" Text="Durum" Style="font-weight: bold;"></asp:Label>
                 <asp:TextBox ID="TxtDurum" runat="server" CssClass="form-control" required MaxLength="10"></asp:TextBox>
             </div>
-            <asp:Button ID="Button2" runat="server" Text="Hesapla" CssClass="btn btn-default" />            
-            <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-success" />
+            <asp:Button ID="Button2" runat="server" Text="Hesapla" CssClass="btn btn-default" OnClick="Button2_Click" />            
+            <asp:Button ID="BtnGuncelle" runat="server" Text="Kaydet" CssClass="btn btn-success" OnClick="BtnGuncelle_Click" />
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx" CssClass="btn btn-info">Geri dön</asp:HyperLink>
 
         </form>

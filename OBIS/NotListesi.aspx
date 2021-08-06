@@ -10,7 +10,7 @@
     <table class="myList" class="table table-bordered">
         <thead>
             <tr>
-                <th scope="col">ID</th>
+                <th scope="col">OGRENCI ID</th>
                 <th scope="col">AD SOYAD</th>
                 <th scope="col">DERS</th>
                 <th scope="col">SINAV 1</th>
@@ -34,7 +34,7 @@
                         <td><%#Eval("ORTALAMA")%></td>
                         <td><%#Eval("DURUM")%></td>
                         <td>
-                            <asp:HyperLink ID="Guncelle" CssClass="btn btn-warning" runat="server"><i class="fas fa-user-edit"></i> Güncelle</asp:HyperLink>
+                            <asp:HyperLink ID="Guncelle" NavigateUrl='<%#"NotGuncelle.aspx?NOTID="+Eval("NOTID")%>' CssClass="btn btn-warning" runat="server"><i class="fas fa-user-edit"></i> Güncelle</asp:HyperLink>
                         </td>
                     </tr>
                 </ItemTemplate>
