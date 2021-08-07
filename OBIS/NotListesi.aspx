@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <a href="OgrenciEkle.aspx">
-        <button class="btn btn-primary"><i class="fas fa-user-plus"></i>Yeni Ekle</button></a>
+        <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Yeni Ekle</button></a>
     <br />
     <br />
     <table class="myList" class="table table-bordered">

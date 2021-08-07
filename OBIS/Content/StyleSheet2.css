@@ -60,8 +60,9 @@ i, span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #d9a61a;
-    color: #fff;
+    background: white;
+    color: black;
+    border:solid 1px black;
     transition: all 0.3s;
 }
 
@@ -111,7 +112,7 @@ i, span {
 
     #sidebar .sidebar-header {
         padding: 20px;
-        background: #d9a61a;
+        background: white;
     }
 
         #sidebar .sidebar-header strong {
@@ -196,6 +197,7 @@ a.article, a.article:hover {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
+    background-color: #dcdcfc;
     transition: all 0.3s;
 }
 

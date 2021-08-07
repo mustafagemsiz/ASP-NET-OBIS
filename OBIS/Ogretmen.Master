@@ -39,7 +39,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header" style="padding-bottom: 0px">
-                <img width="220" src="Images/Selcuklogo1975.png" />
+                <img width="220" src="Images/eokul.png" />
             </div>
             <hr />
             <ul class="list-unstyled components" style="padding-top: 0px;">
@@ -50,13 +50,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="DersListesi.aspx">
                         <i class="fas fa-book"></i>
                         <span></span>Ders Paneli
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="MesajListesi.aspx">
                         <i class="fas fa-comments"></i>
                         <span></span>Mesaj Paneli
                     </a>
@@ -87,14 +87,14 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-chart-pie"></i>
-                        <span></span>Grafik Paneli
+                        <i class="fas fa-cogs"></i>
+                        <span></span>Ayar Paneli
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-cogs"></i>
-                        <span></span>Ayar Paneli
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span></span>Çıkış Yap
                     </a>
                 </li>
             </ul>

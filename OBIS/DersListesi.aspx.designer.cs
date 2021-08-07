@@ -10,7 +10,7 @@
 namespace OBIS {
     
     
-    public partial class NotListesi {
+    public partial class DersListesi {
         
         /// <summary>
         /// Repeater1 control.

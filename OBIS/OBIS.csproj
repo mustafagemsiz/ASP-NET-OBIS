@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -332,11 +333,16 @@
     <Content Include="Content\sidebar\style4.css" />
     <Content Include="Content\sidebar\style5.css" />
     <Content Include="Content\StyleSheet2.css" />
+    <Content Include="DersEkle.aspx" />
+    <Content Include="DersListesi.aspx" />
+    <Content Include="DersSil.aspx" />
     <Content Include="DuyuruEkle.aspx" />
     <Content Include="DuyuruGuncelle.aspx" />
     <Content Include="DuyuruListesi.aspx" />
     <Content Include="DuyuruSil.aspx" />
-    <Content Include="Images\Selcuklogo1975.png" />
+    <Content Include="GelenMesajlar.aspx" />
+    <Content Include="Images\eokul.png" />
+    <Content Include="MesajListesi.aspx" />
     <Content Include="NotGuncelle.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
@@ -350,6 +356,27 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DersEkle.aspx.cs">
+      <DependentUpon>DersEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersEkle.aspx.designer.cs">
+      <DependentUpon>DersEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersListesi.aspx.cs">
+      <DependentUpon>DersListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersListesi.aspx.designer.cs">
+      <DependentUpon>DersListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersSil.aspx.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersSil.aspx.designer.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="DuyuruEkle.aspx.cs">
       <DependentUpon>DuyuruEkle.aspx</DependentUpon>
@@ -378,6 +405,20 @@
     </Compile>
     <Compile Include="DuyuruSil.aspx.designer.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GelenMesajlar.aspx.cs">
+      <DependentUpon>GelenMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GelenMesajlar.aspx.designer.cs">
+      <DependentUpon>GelenMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajListesi.aspx.cs">
+      <DependentUpon>MesajListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajListesi.aspx.designer.cs">
+      <DependentUpon>MesajListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotGuncelle.aspx.cs">
       <DependentUpon>NotGuncelle.aspx</DependentUpon>

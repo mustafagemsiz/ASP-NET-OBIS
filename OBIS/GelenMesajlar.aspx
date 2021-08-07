@@ -1,12 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="DuyuruListesi.aspx.cs" Inherits="OBIS.DuyuruListesi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="GelenMesajlar.aspx.cs" Inherits="OBIS.GelenMesajlar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <a href="DuyuruEkle.aspx">
-        <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Yeni Ekle</button></a>
-      <hr/>
-    <table class="myList" class="table table-bordered">
+        <table class="myList" class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">ID</th>
