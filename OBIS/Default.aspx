@@ -1,15 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="OBIS.WebForm1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <a href="OgrenciEkle.aspx">
-        <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Yeni Ekle</button></a>
+        <button class="btn btn-primary"><i class="fas fa-user-plus"></i>Yeni Ekle</button></a>
     <br />
     <br />
     <table class="myList" class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">ID</th>
+                <th scope="col">NUMARA</th>
                 <th scope="col">AD</th>
                 <th scope="col">SOYAD</th>
                 <th scope="col">TELEFON</th>
@@ -23,6 +25,7 @@
                 <ItemTemplate>
                     <tr>
                         <td><%#Eval("OGRID")%></td>
+                        <td><%#Eval("OGRNUMARA")%></td>
                         <td><%#Eval("OGRAD")%></td>
                         <td><%#Eval("OGRSOYAD")%></td>
                         <td><%#Eval("OGRTELEFON")%></td>

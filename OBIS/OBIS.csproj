@@ -341,8 +341,10 @@
     <Content Include="DuyuruListesi.aspx" />
     <Content Include="DuyuruSil.aspx" />
     <Content Include="GelenMesajlar.aspx" />
+    <Content Include="GidenMesajlar.aspx" />
     <Content Include="Images\eokul.png" />
-    <Content Include="MesajListesi.aspx" />
+    <Content Include="Istatistikler.aspx" />
+    <Content Include="MesajOlustur.aspx" />
     <Content Include="NotGuncelle.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
@@ -413,12 +415,26 @@
     <Compile Include="GelenMesajlar.aspx.designer.cs">
       <DependentUpon>GelenMesajlar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MesajListesi.aspx.cs">
-      <DependentUpon>MesajListesi.aspx</DependentUpon>
+    <Compile Include="GidenMesajlar.aspx.cs">
+      <DependentUpon>GidenMesajlar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MesajListesi.aspx.designer.cs">
-      <DependentUpon>MesajListesi.aspx</DependentUpon>
+    <Compile Include="GidenMesajlar.aspx.designer.cs">
+      <DependentUpon>GidenMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Istatistikler.aspx.cs">
+      <DependentUpon>Istatistikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Istatistikler.aspx.designer.cs">
+      <DependentUpon>Istatistikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajOlustur.aspx.cs">
+      <DependentUpon>MesajOlustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajOlustur.aspx.designer.cs">
+      <DependentUpon>MesajOlustur.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotGuncelle.aspx.cs">
       <DependentUpon>NotGuncelle.aspx</DependentUpon>
