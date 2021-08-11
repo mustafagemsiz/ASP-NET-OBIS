@@ -342,8 +342,10 @@
     <Content Include="DuyuruSil.aspx" />
     <Content Include="GelenMesajlar.aspx" />
     <Content Include="GidenMesajlar.aspx" />
+    <Content Include="Images\bg.jpg" />
     <Content Include="Images\eokul.png" />
     <Content Include="Istatistikler.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="MesajOlustur.aspx" />
     <Content Include="NotGuncelle.aspx" />
     <Content Include="NotListesi.aspx" />
@@ -352,6 +354,7 @@
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="OgrenciEkle.aspx" />
+    <Content Include="Galeri.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSet1.Designer.cs">
@@ -429,6 +432,13 @@
     <Compile Include="Istatistikler.aspx.designer.cs">
       <DependentUpon>Istatistikler.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MesajOlustur.aspx.cs">
       <DependentUpon>MesajOlustur.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -485,6 +495,13 @@
     </Compile>
     <Compile Include="OgrenciEkle.aspx.designer.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeri.aspx.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeri.aspx.designer.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
