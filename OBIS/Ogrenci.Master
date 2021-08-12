@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ogrenci.master.cs" Inherits="OBIS.Ogrenci" %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Collapsible sidebar using Bootstrap 4</title>
+    <!--DataTables CSS & JS-->
+    <script src="DataTables/jquery-3.6.0.min.js"></script>
+    <link href="DataTables/jquery.dataTables.css" rel="stylesheet" />
+    <script src="DataTables/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.myList').DataTable(
+                {
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                    }
+                }
+            );
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS CDN -->
+    <link href="Content/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header" style="padding-bottom: 0px">
+                <img width="220" src="Images/eokul.png" />
+            </div>
+            <hr />
+            <ul class="list-unstyled components" style="padding-top: 0px;">
+                <li>
+                    <a href="Default.aspx">
+                        <i class="fas fa-address-card"></i>
+                        <span></span>Öğrenci Paneli
+                    </a>
+                </li>
+                <li>
+                    <a href="GelenMesajlar.aspx">
+                        <i class="fas fa-comments"></i>
+                        <span></span>Mesaj Paneli
+                    </a>
+                </li>
+                <li>
+                    <a href="NotListesi.aspx">
+                        <i class="fas fa-clipboard"></i>
+                        <span></span>Not Paneli
+                    </a>
+                </li>
+                <li>
+                    <a href="DuyuruListesi.aspx">
+                        <i class="fas fa-bullhorn"></i>
+                        <span></span>Duyuru Paneli
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span></span>Çıkış Yap
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="Content/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

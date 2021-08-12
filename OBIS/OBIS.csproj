@@ -332,6 +332,7 @@
     <Content Include="Content\sidebar\style3.css" />
     <Content Include="Content\sidebar\style4.css" />
     <Content Include="Content\sidebar\style5.css" />
+    <Content Include="Content\StyleSheet.css" />
     <Content Include="Content\StyleSheet2.css" />
     <Content Include="DersEkle.aspx" />
     <Content Include="DersListesi.aspx" />
@@ -344,11 +345,13 @@
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Images\bg.jpg" />
     <Content Include="Images\eokul.png" />
+    <Content Include="Images\okul.png" />
     <Content Include="Istatistikler.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MesajOlustur.aspx" />
     <Content Include="NotGuncelle.aspx" />
     <Content Include="NotListesi.aspx" />
+    <Content Include="OgrenciDefault.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
@@ -460,6 +463,20 @@
     <Compile Include="NotListesi.aspx.designer.cs">
       <DependentUpon>NotListesi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ogrenci.Master.cs">
+      <DependentUpon>Ogrenci.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ogrenci.Master.designer.cs">
+      <DependentUpon>Ogrenci.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDefault.aspx.cs">
+      <DependentUpon>OgrenciDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciDefault.aspx.designer.cs">
+      <DependentUpon>OgrenciDefault.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciGuncelle.aspx.cs">
       <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -503,6 +520,7 @@
     <Compile Include="Galeri.aspx.designer.cs">
       <DependentUpon>Galeri.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SqlBaglantisi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ogretmen.Master" />
@@ -614,6 +632,7 @@
     <Content Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
+    <Content Include="Ogrenci.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

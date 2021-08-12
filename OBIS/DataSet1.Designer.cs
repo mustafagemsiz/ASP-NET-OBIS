@@ -2740,6 +2740,12 @@ namespace OBIS {
             
             private global::System.Data.DataColumn columnOGRSOYAD;
             
+            private global::System.Data.DataColumn columnOGRMAIL;
+            
+            private global::System.Data.DataColumn columnOGRSIFRE;
+            
+            private global::System.Data.DataColumn columnOGRTELEFON;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public TBL_OGRENCI1DataTable() {
@@ -2807,6 +2813,30 @@ namespace OBIS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn OGRMAILColumn {
+                get {
+                    return this.columnOGRMAIL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn OGRSIFREColumn {
+                get {
+                    return this.columnOGRSIFRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn OGRTELEFONColumn {
+                get {
+                    return this.columnOGRTELEFON;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2842,13 +2872,16 @@ namespace OBIS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public TBL_OGRENCI1Row AddTBL_OGRENCI1Row(string OGRFOTOGRAF, string OGRAD, string OGRSOYAD) {
+            public TBL_OGRENCI1Row AddTBL_OGRENCI1Row(string OGRFOTOGRAF, string OGRAD, string OGRSOYAD, string OGRMAIL, string OGRSIFRE, string OGRTELEFON) {
                 TBL_OGRENCI1Row rowTBL_OGRENCI1Row = ((TBL_OGRENCI1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         OGRFOTOGRAF,
                         OGRAD,
-                        OGRSOYAD};
+                        OGRSOYAD,
+                        OGRMAIL,
+                        OGRSIFRE,
+                        OGRTELEFON};
                 rowTBL_OGRENCI1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTBL_OGRENCI1Row);
                 return rowTBL_OGRENCI1Row;
@@ -2882,6 +2915,9 @@ namespace OBIS {
                 this.columnOGRFOTOGRAF = base.Columns["OGRFOTOGRAF"];
                 this.columnOGRAD = base.Columns["OGRAD"];
                 this.columnOGRSOYAD = base.Columns["OGRSOYAD"];
+                this.columnOGRMAIL = base.Columns["OGRMAIL"];
+                this.columnOGRSIFRE = base.Columns["OGRSIFRE"];
+                this.columnOGRTELEFON = base.Columns["OGRTELEFON"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2895,6 +2931,12 @@ namespace OBIS {
                 base.Columns.Add(this.columnOGRAD);
                 this.columnOGRSOYAD = new global::System.Data.DataColumn("OGRSOYAD", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOGRSOYAD);
+                this.columnOGRMAIL = new global::System.Data.DataColumn("OGRMAIL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOGRMAIL);
+                this.columnOGRSIFRE = new global::System.Data.DataColumn("OGRSIFRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOGRSIFRE);
+                this.columnOGRTELEFON = new global::System.Data.DataColumn("OGRTELEFON", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOGRTELEFON);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnOGRID}, true));
                 this.columnOGRID.AutoIncrement = true;
@@ -4078,6 +4120,54 @@ namespace OBIS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string OGRMAIL {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_OGRENCI1.OGRMAILColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OGRMAIL\' in table \'TBL_OGRENCI1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_OGRENCI1.OGRMAILColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string OGRSIFRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_OGRENCI1.OGRSIFREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OGRSIFRE\' in table \'TBL_OGRENCI1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_OGRENCI1.OGRSIFREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string OGRTELEFON {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBL_OGRENCI1.OGRTELEFONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OGRTELEFON\' in table \'TBL_OGRENCI1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBL_OGRENCI1.OGRTELEFONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsOGRFOTOGRAFNull() {
                 return this.IsNull(this.tableTBL_OGRENCI1.OGRFOTOGRAFColumn);
             }
@@ -4110,6 +4200,42 @@ namespace OBIS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetOGRSOYADNull() {
                 this[this.tableTBL_OGRENCI1.OGRSOYADColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsOGRMAILNull() {
+                return this.IsNull(this.tableTBL_OGRENCI1.OGRMAILColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetOGRMAILNull() {
+                this[this.tableTBL_OGRENCI1.OGRMAILColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsOGRSIFRENull() {
+                return this.IsNull(this.tableTBL_OGRENCI1.OGRSIFREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetOGRSIFRENull() {
+                this[this.tableTBL_OGRENCI1.OGRSIFREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsOGRTELEFONNull() {
+                return this.IsNull(this.tableTBL_OGRENCI1.OGRTELEFONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetOGRTELEFONNull() {
+                this[this.tableTBL_OGRENCI1.OGRTELEFONColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -7561,11 +7687,17 @@ WHERE  (TBL_NOT.NOTID = @NOTID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT OGRFOTOGRAF, OGRID, OGRAD, OGRSOYAD\r\nFROM     TBL_OGRENCI";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT OGRFOTOGRAF, OGRAD, OGRSOYAD, OGRSIFRE, OGRMAIL, OGRTELEFON\r\nFROM     TBL_" +
+                "OGRENCI\r\nWHERE  (OGRNUMARA = @OGRNUMARA)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRNUMARA", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, "OGRNUMARA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7587,6 +7719,42 @@ WHERE  (TBL_NOT.NOTID = @NOTID)";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.TBL_OGRENCI1DataTable OgrenciFotografListele() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.TBL_OGRENCI1DataTable dataTable = new DataSet1.TBL_OGRENCI1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByOgrGetir(DataSet1.TBL_OGRENCI1DataTable dataTable, string OGRNUMARA) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((OGRNUMARA == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(OGRNUMARA));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.TBL_OGRENCI1DataTable OgrenciGetir(string OGRNUMARA) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((OGRNUMARA == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(OGRNUMARA));
+            }
             DataSet1.TBL_OGRENCI1DataTable dataTable = new DataSet1.TBL_OGRENCI1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS CDN -->
     <link href="Content/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Our Custom CSS -->
-    <link href="Content/StyleSheet2.css" rel="stylesheet" />
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
     <title>Giriş Sayfası</title>
 </head>
 <body class="body">
@@ -20,15 +20,15 @@
         <div style="width: 700px; margin: auto">
             <h1 style="text-align: center; margin-top: 25%; font-family: Corbel; color: #FFFFFF; font-size: 50px;">Öğrenci Giriş Paneli</h1>
             <div style="margin: auto; text-align: center">
-                <img src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" width="100px" height="100px" />
+                <img src="/Images/okul.png" width="150px" height="150px" />
             </div>
             <div class="form-group">
-                <asp:Label runat="server" Text="Kullanıcı Adı" Font-Size="Medium" ForeColor="White"></asp:Label>
-                <asp:TextBox runat="server" class="form-control"></asp:TextBox>
+                <asp:Label runat="server" Text="Öğrenci Numarası" Font-Size="Medium" ForeColor="White"></asp:Label>
+                <asp:TextBox id="TxtNumara" runat="server" class="form-control" required ></asp:TextBox>
             </div>
             <div class="form-group">
                 <asp:Label runat="server" Text="Şifre" Font-Size="Medium" ForeColor="White"></asp:Label>
-                <asp:TextBox runat="server" class="form-control" TextMode="Password"></asp:TextBox>
+                <asp:TextBox  id="TxtSifre" runat="server" class="form-control" TextMode="Password" required></asp:TextBox>
             </div>
             <asp:Button runat="server" Text="Giriş Yap" class="btn btn-success" Style="width: 100%; margin-bottom: 10px" OnClick="Unnamed5_Click" />
             <asp:Button runat="server" Text="İptal Et" class="btn btn-danger" Style="width: 200px" />

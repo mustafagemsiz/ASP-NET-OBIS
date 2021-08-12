@@ -170,7 +170,6 @@ C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\bin\roslyn\VBCSCompiler.exe
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csprojAssemblyReference.cache
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csproj.CoreCompileInputs.cache
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csproj.CopyComplete
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.dll
