@@ -24,7 +24,8 @@ namespace OBIS
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
-                Response.Redirect("OgrenciDefault.aspx?Numara="+TxtNumara.Text);
+                Session.Add("NUMARA", TxtNumara.Text);
+                Response.Redirect("OgrenciDefault.aspx");
             }
             else
             {

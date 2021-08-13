@@ -174,3 +174,4 @@ C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csproj.CoreComp
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csproj.CopyComplete
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.dll
 C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.pdb
+C:\Users\birha\Documents\GitHub\ASP-NET-OBIS\OBIS\obj\Debug\OBIS.csprojAssemblyReference.cache

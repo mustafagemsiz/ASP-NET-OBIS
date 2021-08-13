@@ -24,10 +24,10 @@ namespace OBIS
                 Response.Redirect("GidenMesajlar.aspx");
             }
             catch (Exception)
-            { 
-            Response.Redirect("GidenMesajlar.aspx");
-        }
+            {
+                Response.Redirect("GidenMesajlar.aspx");
+            }
 
-    }
+        }
     }
 }

@@ -43,25 +43,25 @@
             <hr />
             <ul class="list-unstyled components" style="padding-top: 0px;">
                 <li>
-                    <a href="Default.aspx">
+                    <a href="OgrenciDefault.aspx">
                         <i class="fas fa-address-card"></i>
                         <span></span>Öğrenci Paneli
                     </a>
                 </li>
                 <li>
-                    <a href="GelenMesajlar.aspx">
+                    <a href="OgrenciGelenMesaj.aspx">
                         <i class="fas fa-comments"></i>
                         <span></span>Mesaj Paneli
                     </a>
                 </li>
                 <li>
-                    <a href="NotListesi.aspx">
+                    <a href="OgrenciNot.aspx">
                         <i class="fas fa-clipboard"></i>
                         <span></span>Not Paneli
                     </a>
                 </li>
                 <li>
-                    <a href="DuyuruListesi.aspx">
+                    <a href="OgrenciDuyuruListesi.aspx">
                         <i class="fas fa-bullhorn"></i>
                         <span></span>Duyuru Paneli
                     </a>

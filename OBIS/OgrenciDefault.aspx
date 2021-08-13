@@ -24,8 +24,7 @@
             <div class="form-group">
                 <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control"  MaxLength="50" Enabled="False">Fotoğraf</asp:TextBox>
             </div>
-                        <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-success"/>
-
+                        <asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-success" OnClick="Button1_Click"/>
         </form>
     </div>
 </asp:Content>
