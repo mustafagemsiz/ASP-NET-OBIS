@@ -18,7 +18,6 @@
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
                 <th scope="col">TARİH VE SAAT</th>
-                <th scope="col">İŞLEMLER</th>
             </tr>
         </thead>
         <tbody>
@@ -30,10 +29,6 @@
                         <td><%#Eval("MSJBASLIK")%></td>
                         <td><%#Eval("MSJICERIK")%></td>
                         <td><%#Eval("MSJTARIH")%></td>
-                        <td>
-                            <asp:HyperLink ID="Guncelle" CssClass="btn btn-warning" NavigateUrl='<%#"~/MesajGuncelle.aspx?DYRID="+Eval("MSJID") %>' runat="server"><i class="fas fa-user-edit"></i> Güncelle</asp:HyperLink>
-                            <asp:HyperLink ID="Sil" CssClass="btn btn-danger" NavigateUrl='<%#"~/MesajSil.aspx?DYRID="+Eval("MSJID") %>' runat="server"><i class="fas fa-user-times"></i> Sil</asp:HyperLink>
-                        </td>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

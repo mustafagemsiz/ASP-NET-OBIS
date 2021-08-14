@@ -11,9 +11,18 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.TBL_MESAJTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJTableAdapter();
-            Repeater1.DataSource = dt.OgretmenGidenMesajlar();
-            Repeater1.DataBind();
+            try
+            {
+                string id = Session["OGRTNUMARA"].ToString();
+                DataSet1TableAdapters.TBL_MESAJTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJTableAdapter();
+                Repeater1.DataSource = dt.OgretmenGidenMesajlar(id);
+                Repeater1.DataBind();
+            }
+            catch (Exception)
+            {
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
     }
 }

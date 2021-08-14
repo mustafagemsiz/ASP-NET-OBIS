@@ -11,9 +11,18 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
             DataSet1TableAdapters.TBL_DERSTableAdapter dt = new DataSet1TableAdapters.TBL_DERSTableAdapter();
             Repeater1.DataSource = dt.DersListesi();
             Repeater1.DataBind();
+            }
+            catch (Exception)
+            {
+
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
     }
 }

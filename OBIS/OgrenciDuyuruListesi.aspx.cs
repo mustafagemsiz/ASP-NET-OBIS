@@ -11,9 +11,17 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.TBL_DUYURUTableAdapter dt = new DataSet1TableAdapters.TBL_DUYURUTableAdapter();
-            Repeater1.DataSource = dt.DuyuruListesi();
-            Repeater1.DataBind();
+            try
+            {
+                DataSet1TableAdapters.TBL_DUYURUTableAdapter dt = new DataSet1TableAdapters.TBL_DUYURUTableAdapter();
+                Repeater1.DataSource = dt.DuyuruListesi();
+                Repeater1.DataBind();
+            }
+            catch (Exception)
+            {
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
     }
 }

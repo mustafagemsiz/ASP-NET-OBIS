@@ -13,8 +13,16 @@ namespace OBIS
        
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
             string id = Session["NUMARA"].ToString();
             TxtMsjGonderen.Text = id;
+            }
+            catch (Exception)
+            {
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)

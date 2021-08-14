@@ -18,7 +18,7 @@
 <body class="body">
     <form id="form1" runat="server" style="margin: auto;">
         <div style="width: 700px; margin: auto">
-            <h1 style="text-align: center; margin-top: 25%; font-family: Corbel; color: #FFFFFF; font-size: 50px;">Öğrenci Giriş Paneli</h1>
+            <h1 style="text-align: center; margin-top: 25%; font-family: Corbel; color: #FFFFFF; font-size: 50px;">E-Okul Bilgi Sistemi</h1>
             <div style="margin: auto; text-align: center">
                 <img src="/Images/okul.png" width="150px" height="150px" />
             </div>
@@ -30,10 +30,8 @@
                 <asp:Label runat="server" Text="Şifre" Font-Size="Medium" ForeColor="White"></asp:Label>
                 <asp:TextBox  id="TxtSifre" runat="server" class="form-control" TextMode="Password" required></asp:TextBox>
             </div>
-            <asp:Button runat="server" Text="Giriş Yap" class="btn btn-success" Style="width: 100%; margin-bottom: 10px" OnClick="Unnamed5_Click" />
-            <asp:Button runat="server" Text="İptal Et" class="btn btn-danger" Style="width: 200px" />
-            <asp:Button runat="server" Text="Şifremi Unutttum" class="btn btn-primary" Style="width: 292px" />
-            <asp:Button runat="server" Text="Yardım" class="btn btn-info" Style="width: 200px" />
+            <asp:Button runat="server" Text="Öğrenci Giriş" class="btn btn-success" Style="width: 100%; margin-bottom: 10px" OnClick="Unnamed5_Click" />
+            <asp:Button runat="server" Text="Öğretmen Giriş" class="btn btn-warning" Style="width: 100%" OnClick="Unnamed4_Click" />
         </div>
     </form>
 </body>

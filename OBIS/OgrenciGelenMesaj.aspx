@@ -24,7 +24,7 @@
             <asp:repeater id="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("GONDEREN")%></td>
+                        <td><%#Eval("MSJGONDEREN")%></td>
                         <td><%#Eval("MSJBASLIK")%></td>
                         <td><%#Eval("MSJICERIK")%></td>
                         <td><%#Eval("MSJTARIH")%></td>

@@ -11,7 +11,16 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+            string id = Session["OGRTNUMARA"].ToString();
+            Session.Add("OGRTNUMARA", id);
+            }
+            catch (Exception)
+            {
 
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }

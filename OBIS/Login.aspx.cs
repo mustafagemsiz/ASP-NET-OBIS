@@ -17,8 +17,8 @@ namespace OBIS
         }
 
         protected void Unnamed5_Click(object sender, EventArgs e)
-        {            
-            SqlCommand komut = new SqlCommand("Select * From TBL_OGRENCI Where OGRNUMARA=@P1 and OGRSIFRE=@P2",bgl.baglanti());
+        {
+            SqlCommand komut = new SqlCommand("Select * From TBL_OGRENCI Where OGRNUMARA=@P1 and OGRSIFRE=@P2", bgl.baglanti());
             komut.Parameters.AddWithValue("@P1", TxtNumara.Text);
             komut.Parameters.AddWithValue("@P2", TxtSifre.Text);
             SqlDataReader dr = komut.ExecuteReader();
@@ -26,6 +26,24 @@ namespace OBIS
             {
                 Session.Add("NUMARA", TxtNumara.Text);
                 Response.Redirect("OgrenciDefault.aspx");
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Hatalı Öğrenci Numarası veya Şifre Lütfen kontrol ediniz.')", true);
+            }
+            bgl.baglanti().Close();
+        }
+
+        protected void Unnamed4_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Select * From TBL_OGRETMEN Where OGRTNUMARA=@P1 and OGRTSIFRE=@P2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", TxtNumara.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                Session.Add("OGRTNUMARA", TxtNumara.Text);
+                Response.Redirect("Default.aspx");
             }
             else
             {

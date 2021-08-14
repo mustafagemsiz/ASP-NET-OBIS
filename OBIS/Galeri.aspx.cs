@@ -11,9 +11,17 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
             DataSet1TableAdapters.TBL_OGRENCI1TableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCI1TableAdapter();
             Repeater1.DataSource = dt.OgrenciFotografListele();
             Repeater1.DataBind();
+            }
+            catch (Exception)
+            {
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
     }
 }

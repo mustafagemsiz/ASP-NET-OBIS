@@ -11,9 +11,17 @@ namespace OBIS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.OgrNotTableAdapter dt = new DataSet1TableAdapters.OgrNotTableAdapter();
-            Repeater1.DataSource = dt.NotListesi();
-            Repeater1.DataBind();
+            try
+            {
+                DataSet1TableAdapters.OgrNotTableAdapter dt = new DataSet1TableAdapters.OgrNotTableAdapter();
+                Repeater1.DataSource = dt.NotListesi();
+                Repeater1.DataBind();
+            }
+            catch (Exception)
+            {
+                Response.Redirect("ErrorPage.aspx");
+            }
+
         }
 
 

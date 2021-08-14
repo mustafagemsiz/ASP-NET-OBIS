@@ -18,7 +18,6 @@
                 <asp:Label for="TxtDyrIcerik" runat="server" Text="Duyuru İçerik" Style="font-weight: bold;"></asp:Label>
                 <textarea id="TxtDyrIcerik" class="form-control" rows="5" maxlength="250" runat="server"></textarea>
             </div>
-
             <asp:Button ID="Button1" runat="server" Text="Kaydet" CssClass="btn btn-success" OnClick="Button1_Click"/>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/DuyuruListesi.aspx" CssClass="btn btn-info">Geri dön</asp:HyperLink>
         </form>

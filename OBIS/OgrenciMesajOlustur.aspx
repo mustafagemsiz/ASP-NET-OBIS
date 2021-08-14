@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <a href="MesajOlustur.aspx">
+    <a href="OgrenciMesajOlustur.aspx">
         <button class="btn btn-success"><i class="fas fa-comment-dots"></i>Mesaj Oluştur</button></a>
-    <a href="GelenMesajlar.aspx">
+    <a href="OgrenciGelenMesaj.aspx">
         <button class="btn btn-primary"><i class="fas fa-download"></i>Gelen Mesajlar</button></a>
-    <a href="GidenMesajlar.aspx">
+    <a href="OgrenciGidenMesaj.aspx">
         <button class="btn btn-primary"><i class="fas fa-upload"></i>Giden Mesajlar</button></a>
 
     <hr />

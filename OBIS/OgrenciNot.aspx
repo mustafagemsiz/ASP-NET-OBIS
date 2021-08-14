@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-     <table style="border-color:black;" class="table table-bordered">
+     <table class="table" style="background-color:white; border:solid 1px black">
         <thead>
             <tr>
                 <th scope="col">DERS</th>

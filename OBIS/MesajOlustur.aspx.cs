@@ -13,7 +13,7 @@ namespace OBIS
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            TxtMsjGonderen.Text = "8975";
+            TxtMsjGonderen.Text = Session["OGRTNUMARA"].ToString();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

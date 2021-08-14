@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>E-Okul Bilgi Sistemi</title>
     <!--DataTables CSS & JS-->
     <script src="DataTables/jquery-3.6.0.min.js"></script>
     <link href="DataTables/jquery.dataTables.css" rel="stylesheet" />
@@ -67,7 +67,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="Cikis.aspx">
                         <i class="fas fa-sign-out-alt"></i>
                         <span></span>Çıkış Yap
                     </a>

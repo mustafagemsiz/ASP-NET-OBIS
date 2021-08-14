@@ -335,12 +335,14 @@
     <Content Include="Content\StyleSheet.css" />
     <Content Include="Content\StyleSheet2.css" />
     <Content Include="DersEkle.aspx" />
+    <Content Include="DersGuncelle.aspx" />
     <Content Include="DersListesi.aspx" />
     <Content Include="DersSil.aspx" />
     <Content Include="DuyuruEkle.aspx" />
     <Content Include="DuyuruGuncelle.aspx" />
     <Content Include="DuyuruListesi.aspx" />
     <Content Include="DuyuruSil.aspx" />
+    <Content Include="ErrorPage.aspx" />
     <Content Include="GelenMesajlar.aspx" />
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Images\bg.jpg" />
@@ -360,6 +362,7 @@
     <Content Include="OgrenciMesajOlustur.aspx" />
     <Content Include="OgrenciNot.aspx" />
     <Content Include="OgrenciSil.aspx" />
+    <Content Include="Cikis.aspx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="OgrenciEkle.aspx" />
@@ -377,6 +380,13 @@
     </Compile>
     <Compile Include="DersEkle.aspx.designer.cs">
       <DependentUpon>DersEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersGuncelle.aspx.cs">
+      <DependentUpon>DersGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersGuncelle.aspx.designer.cs">
+      <DependentUpon>DersGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="DersListesi.aspx.cs">
       <DependentUpon>DersListesi.aspx</DependentUpon>
@@ -419,6 +429,13 @@
     </Compile>
     <Compile Include="DuyuruSil.aspx.designer.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GelenMesajlar.aspx.cs">
       <DependentUpon>GelenMesajlar.aspx</DependentUpon>
@@ -545,6 +562,13 @@
     </Compile>
     <Compile Include="Ogretmen.Master.designer.cs">
       <DependentUpon>Ogretmen.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Cikis.aspx.cs">
+      <DependentUpon>Cikis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cikis.aspx.designer.cs">
+      <DependentUpon>Cikis.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
