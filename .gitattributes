@@ -1,2 +1,2 @@
 * linguist-vendored
-*.asp linguist-detectable=false
+*.aspx linguist-detectable=false
