@@ -1,2 +1,2 @@
 * linguist-vendored
-*.aspx linguist-vendored=false
+*.aspx linguist-vendored=true
