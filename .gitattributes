@@ -1,4 +1,2 @@
-* linguist-vendored
-*.aspx linguist-vendored=true
-*.css linguist-vendored=false
-*.js linguist-vendored=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
